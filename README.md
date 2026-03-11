@@ -1,6 +1,10 @@
-# Zipper-LoRA
+# Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition
 
-> [Paper Title - Coming Soon]
+## 📋 TODO
+
+- [ ] Paper
+- [ ] Code  
+- [ ] Model Weights
 
 ## 🔧 Installation
 
