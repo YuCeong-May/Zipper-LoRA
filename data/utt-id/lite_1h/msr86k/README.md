@@ -1,1 +1,1 @@
-MSR-VTT official training set
+MSR86k official training set
