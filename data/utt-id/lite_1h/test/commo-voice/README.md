@@ -1,1 +1,1 @@
-Common Voice test set (12lang_lite)
+Common Voice 18.0 test 4h subset
