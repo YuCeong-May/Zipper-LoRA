@@ -1,1 +1,1 @@
-使用 Common Voice 18.0 测试集4h子集合
+Common Voice test set (12lang_lite)

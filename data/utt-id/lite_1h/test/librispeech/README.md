@@ -1,1 +1,1 @@
-使用 LibriSpeech 官方测试集 test-clean，test-other
+LibriSpeech official dataset (train: train-clean-100, test: test-clean)

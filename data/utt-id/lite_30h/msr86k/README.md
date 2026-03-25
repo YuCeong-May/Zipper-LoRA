@@ -1,1 +1,1 @@
-使用 MSR-VTT 官方训练集
+MSR-VTT official training set

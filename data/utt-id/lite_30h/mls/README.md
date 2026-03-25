@@ -1,1 +1,1 @@
-使用 MLS 官方训练集 (各语言子集)
+MLS official training set (language-specific subsets)

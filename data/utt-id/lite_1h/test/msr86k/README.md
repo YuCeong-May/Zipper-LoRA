@@ -1,1 +1,1 @@
-使用 MSR86k 官方开发集
+MSR-VTT official test set
