@@ -15,6 +15,7 @@ Speech Large Language Models (Speech-LLMs) have emerged as a powerful approach f
 ## 📋 TODO
 
 - [x] Paper
+- [x] Data
 - [ ] Code
 - [ ] Model Weights (coming soon: https://huggingface.co/YuCeong-May/Zipper-LoRA)
 
