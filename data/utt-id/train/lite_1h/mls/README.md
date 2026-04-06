@@ -1,5 +1,6 @@
-MLS official training set (language-specific subsets)
-de
-es
-fr
-it
+# MLS official training set (language-specific subsets)
+
+- de
+- es
+- fr
+- it
