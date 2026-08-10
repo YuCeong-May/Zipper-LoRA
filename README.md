@@ -1,6 +1,6 @@
 # Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition
 
-[![arXiv](https://img.shields.io/badge/arXiv-2603.17558-b31c1b.svg)](https://arxiv.org/abs/2603.17558)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE-Xplore-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11636226)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Zipper--LoRA-yellow.svg)](https://huggingface.co/YuCeong-May/Zipper-LoRA)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
