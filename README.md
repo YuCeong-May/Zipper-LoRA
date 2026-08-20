@@ -20,12 +20,19 @@ Speech Large Language Models (Speech-LLMs) have emerged as a powerful approach f
 - [x] Model Weights (https://huggingface.co/YuCeong-May/Zipper-LoRA)
 
 
+## Citation
+
+If you find this work useful, please cite our paper:
+
 ```bibtex
 @article{ZipperLoRA2026,
-  title={Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition},
   author={Mei, Yuxiang and Qiu, Delai and Liu, Shengping and Liang, Jiaen and Long, Yanhua},
-  journal={arXiv preprint arXiv:2603.17558},
-  year={2026}
+  journal={IEEE Transactions on Audio, Speech and Language Processing},
+  title={Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM Based Multilingual Speech Recognition},
+  year={2026},
+  volume={34},
+  pages={3956--3969},
+  doi={10.1109/TASLPRO.2026.3719331}
 }
 ```
 
