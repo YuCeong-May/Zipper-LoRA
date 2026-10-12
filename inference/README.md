@@ -1,13 +1,12 @@
-# Zipper-LoRA — Inference
+# Zipper-LoRA Usage Guide
 
-Inference-only release of the Zipper-LoRA adapters described in
+Implementation of the Zipper-LoRA adapters described in
 *Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual
-Speech Recognition*.  This directory ships the installable package, the
+Speech Recognition*. This directory provides the Python package, the
 released-checkpoint ASR entry point, the Whisper LID-embedding export tool, and
-the injection/checkpoint tests.  The training framework is intentionally not
-included.
+the injection/checkpoint tests.
 
-## Install
+## Installation
 
 ```bash
 conda create -n zipper-lora python=3.11 -y
@@ -25,7 +24,7 @@ python -m pip install torch
 python -m pip install -e '.[inference]'
 ```
 
-## Layout
+## Package Structure
 
 ```text
 inference/
@@ -46,7 +45,7 @@ inference/
     └── test_injection.py          # shape and injection coverage
 ```
 
-## Design
+## Adapter Design
 
 For a frozen linear layer `W0`, all variants add the same rank-`r` residual:
 
@@ -102,10 +101,11 @@ Each adapter contains an LID embedding table.  It can be initialized with
 Whisper language-token vectors exported by the bundled tool, or populated by
 another application-owned LID encoder.
 
-## Run a checkpoint
+## Checkpoint Inference
 
-Two pieces are required and are hosted on Hugging Face (not in this repo):
-the **base Qwen-Audio model** and one **trained checkpoint**.
+See [Hugging Face](https://huggingface.co/YuCeong-May/Zipper-LoRA/tree/main/ckpts) for model checkpoints.
+
+To run ASR, prepare the base model directory and one checkpoint as described below.
 
 1. Download the base model directory
    `qwen3-1.7b-chat-audio-whisper-v3-convproj-chunk` (its `modeling_qwen3.py`,
@@ -160,7 +160,7 @@ The command auto-selects CUDA, then Apple Silicon MPS, then CPU.  To force a
 backend use `--device cuda`, `--device mps`, or `--device cpu`.  CPU is useful
 for a compatibility check but is generally impractical for a 1.7B model.
 
-## Whisper LID embedding tool
+## Whisper LID Embedding Export
 
 `tools/extract_whisper_lid_embeddings.py` exports vectors from Whisper's
 decoder language tokens.  The requested language order is preserved in the
@@ -186,7 +186,7 @@ for _, layer in iter_zipper_layers(model):
     layer.zipper_lora.lid_embedding.weight.data.copy_(lid_embeddings)
 ```
 
-## Install and check
+## Verification
 
 ```bash
 python -m pip install pytest

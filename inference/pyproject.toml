@@ -7,6 +7,7 @@ name = "zipper-lora"
 version = "0.1.0"
 description = "Language-conditioned rank-wise LoRA composition"
 readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = ["torch>=2.0"]
 
@@ -20,6 +21,9 @@ inference = [
 
 [project.scripts]
 zipper-lora-asr = "zipper_lora.cli:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
