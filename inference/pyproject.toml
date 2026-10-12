@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zipper-lora"
+version = "0.1.0"
+description = "Language-conditioned rank-wise LoRA composition"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0"]
+
+[project.optional-dependencies]
+tools = ["transformers>=4.37"]
+inference = [
+  "transformers>=4.37", "peft>=0.10", "accelerate>=0.28", "safetensors>=0.4",
+  "sentencepiece>=0.1.99", "tiktoken>=0.6", "librosa>=0.10", "soundfile>=0.12",
+  "torchaudio>=2.0", "loguru>=0.7",
+]
+
+[project.scripts]
+zipper-lora-asr = "zipper_lora.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

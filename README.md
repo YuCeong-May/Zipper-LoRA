@@ -16,9 +16,20 @@ Speech Large Language Models (Speech-LLMs) have emerged as a powerful approach f
 
 - [x] Paper
 - [x] Data
-- [ ] Code (will be released after paper accepted)
+- [x] Code (inference-only, see [`inference/`](inference/))
 - [x] Model Weights (https://huggingface.co/YuCeong-May/Zipper-LoRA)
 
+## 💻 Code
+
+The released code is **inference-only** and lives in [`inference/`](inference/).
+It contains the installable `zipper-lora` package, the released-checkpoint ASR
+entry point, the Whisper LID-embedding export tool, and the injection tests.
+See [`inference/README.md`](inference/README.md) for install and run
+instructions.  The training framework is not released.
+
+> The base Qwen-Audio model (`qwen3-1.7b-chat-audio-whisper-v3-convproj-chunk`)
+> and the trained checkpoints are hosted on Hugging Face, not in this repository
+> (they exceed GitHub's file-size limit).
 
 ## Citation
 

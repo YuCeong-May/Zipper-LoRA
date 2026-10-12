@@ -1,0 +1,19 @@
+# Model weights and checkpoints are hosted on Hugging Face, not GitHub.
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.index.json
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# OS
+.DS_Store
