@@ -7,6 +7,7 @@
 **IEEE Transactions on Audio, Speech and Language Processing · 2026**
 
 [![Paper](https://img.shields.io/badge/Paper-IEEE_Xplore-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11636226)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.17558-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.17558)
 [![Models](https://img.shields.io/badge/Models-Hugging_Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/YuCeong-May/Zipper-LoRA/tree/main/ckpts)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
